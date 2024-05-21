@@ -10,13 +10,13 @@ const coreConcepts = [
   {
     title: "Presentation of MultiversX",
     content: "Discover the core concepts & vision of the MultiversX network.",
-    docName: "welcome/welcome-to-multiversx",
+    docName: "/docs/intro",
     icon: "🌍",
   },
   {
     title: "Key Features",
     content: "Explore the key features and benefits of MultiversX.",
-    docName: "welcome/welcome-to-multiversx",
+    docName: "/docs/intro",
     icon: "🌍",
   },
 ];
@@ -25,28 +25,28 @@ const technologies = [
   {
     title: "Secure Proof of Stake",
     content: "Learn about the vision and mission of the MultiversX network.",
-    docName: "welcome/welcome-to-multiversx",
+    docName: "/docs/intro",
     icon: "🎯",
   },
   {
     title: "Adaptive Sharding",
     content:
       "Ensures scalability and efficiency, optimizes the number of active shards to reduce overhead.",
-    docName: "welcome/welcome-to-multiversx",
+    docName: "/docs/intro",
     icon: "📈",
   },
   {
     title: "ESDT Standard",
     content:
       "Elrond Standard Digital Token (ESDT) is a token standard on the MultiversX.",
-    docName: "welcome/welcome-to-multiversx",
+    docName: "/docs/intro",
     icon: "🪙",
   },
   {
     title: "WASM VM",
     content:
       "MultiversX employs a unique VM architecture designed to enhance speed and scalability.",
-    docName: "welcome/welcome-to-multiversx",
+    docName: "/docs/intro",
     icon: "⚙️",
   },
 ];

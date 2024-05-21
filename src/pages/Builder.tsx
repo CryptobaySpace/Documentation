@@ -8,20 +8,20 @@ export const BuilderList = [
     title: "Why build on MultiversX ?",
     content:
       "Discover the power of our technology and the benefits of building in our ecosystem.",
-    docName: "welcome/welcome-to-multiversx",
+    docName: "/docs/intro",
     icon: "🛠️",
   },
   {
     title: "Build a DApp",
     content:
       "Learn how to build your decentralized application step by step on MultiversX.",
-    docName: "welcome/welcome-to-multiversx",
+    docName: "/docs/intro",
     icon: "🌍",
   },
   {
     title: "Build a Smart Contract",
     content: "Follow detailed guides to develop and deploy smart contracts.",
-    docName: "welcome/welcome-to-multiversx",
+    docName: "/docs/intro",
     icon: "📜",
   },
 ];
@@ -31,21 +31,21 @@ export const GuidesList = [
     title: "Manage a Wallet",
     content:
       "Learn how to create, manage, and use a MultiversX wallet with availables technologies.",
-    docName: "welcome/welcome-to-multiversx",
+    docName: "/docs/intro",
     icon: "📱",
   },
   {
     title: "Create a Token",
     content:
       "Issue your own tokens on MultiversX with our ESDT token standard.",
-    docName: "welcome/welcome-to-multiversx",
+    docName: "/docs/intro",
     icon: "🔷",
   },
 
   {
     title: "Create an NFT",
     content: "Create and manage your own NFTs on MultiversX.",
-    docName: "welcome/welcome-to-multiversx",
+    docName: "/docs/intro",
     icon: "🔷",
   },
 ];

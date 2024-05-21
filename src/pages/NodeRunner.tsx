@@ -10,13 +10,13 @@ const Concepts = [
   {
     title: "Benefits & Risks",
     content: "Understand the advantages and risks of validating transactions.",
-    docName: "welcome/welcome-to-multiversx",
+    docName: "/docs/intro",
     icon: "💰",
   },
   {
     title: "Requirements",
     content: "What do you need to run a node on MultiversX?",
-    docName: "welcome/welcome-to-multiversx",
+    docName: "/docs/intro",
     icon: "📊",
   },
 
@@ -24,7 +24,7 @@ const Concepts = [
     title: " Staking Provider",
     content:
       "Learn how to provide staking services and earn rewards on MultiversX.",
-    docName: "welcome/welcome-to-multiversx",
+    docName: "/docs/intro",
     icon: "💰",
   },
 ];
@@ -33,20 +33,20 @@ const RunNodesQuickLinks = [
   {
     title: "Setup a Validator Node",
     content: "Learn how to set up and run a validator node on MultiversX.",
-    docName: "welcome/welcome-to-multiversx",
+    docName: "/docs/intro",
     icon: "🖥",
   },
   {
     title: "Use Multikey",
     content:
       "Learn how to use Multikey to manage numerous validator nodes on MultiversX.",
-    docName: "welcome/welcome-to-multiversx",
+    docName: "/docs/intro",
     icon: "🔗",
   },
   {
     title: "Maintenace & Monitoring",
     content: "Understand how to maintain and monitor your validator node.",
-    docName: "welcome/welcome-to-multiversx",
+    docName: "/docs/intro",
     icon: "🔧",
   },
 ];
@@ -55,13 +55,13 @@ const ToolsQuickLinks = [
   {
     title: "Maintenace & Monitoring",
     content: "Understand how to maintain and monitor your validator node.",
-    docName: "welcome/welcome-to-multiversx",
+    docName: "/docs/intro",
     icon: "🔧",
   },
   {
     title: "What are Staking Providers?",
     content: "Understand the role of staking providers on MultiversX.",
-    docName: "welcome/welcome-to-multiversx",
+    docName: "/docs/intro",
     icon: "🖥",
   },
 ];
@@ -129,4 +129,4 @@ const resourceTags = [
     </Layout>
   );
 }
-
+ 
