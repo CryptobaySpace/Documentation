@@ -1,12 +1,10 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import Heading from '@theme/Heading';
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
+import clsx from "clsx";
 
+import QuickLink from "../components/QuickLink";
 import styles from "../css/styles.module.css";
-import PageHeader from '../layout/Header';
-import QuickLink from '../components/QuickLink';
+import PageHeader from "../layout/Header";
 
 export const TechnoList = [
   {
@@ -53,37 +51,37 @@ export const TechnoList = [
 ];
 
 export default function Home(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
-  console.log("siteConfig", siteConfig)
+  const { siteConfig } = useDocusaurusContext();
+  console.log("siteConfig", siteConfig);
   return (
     <Layout
-    title="Docs"
-    description="A highly scalable, fast and secure blockchain platform for distributed apps, enterprise use cases and the new internet economy."
-  >
-    <PageHeader
-      title="Welcome to the MultiversX Docs!"
-      subtitle="Choose your path you must."
-    />
-    <section className={styles.features}>
-      <div className={clsx("container", styles.container)}>
-        <h1
-          className={clsx(
-            "hero__subtitle",
-            "text--center",
-            "justify-content--center",
-            "font-weight--bold",
-            "text-decoration--underline"
-          )}
-        >
-          Our Technologies
-        </h1>
-        <div className={clsx("row", styles.row)}>
-          {TechnoList.map((props, idx) => (
-            <QuickLink key={idx} {...props} />
-          ))}
+      title="Docs"
+      description="A highly scalable, fast and secure blockchain platform for distributed apps, enterprise use cases and the new internet economy."
+    >
+      <PageHeader
+        title="Welcome to the MultiversX Docs!"
+        subtitle="Choose your path you must."
+      />
+      <section className={styles.features}>
+        <div className={clsx("container", styles.container)}>
+          <h1
+            className={clsx(
+              "hero__subtitle",
+              "text--center",
+              "justify-content--center",
+              "font-weight--bold",
+              "text-decoration--underline"
+            )}
+          >
+            Our Technologies
+          </h1>
+          <div className={clsx("row", styles.row)}>
+            {TechnoList.map((props, idx) => (
+              <QuickLink key={idx} {...props} />
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
-  </Layout>
+      </section>
+    </Layout>
   );
 }

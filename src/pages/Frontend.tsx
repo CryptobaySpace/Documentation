@@ -1,5 +1,4 @@
 import Layout from "@theme/Layout";
-import clsx from "clsx";
 import React from "react";
 import QuickLink from "../components/QuickLink";
 import styles from "../css/styles.module.css";
@@ -51,8 +50,7 @@ const technologies = [
   },
 ];
 
-
-  export default function Learn(): JSX.Element {
+export default function Frontend(): JSX.Element {
   return (
     <Layout
       title="Learn"

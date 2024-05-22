@@ -50,7 +50,7 @@ export const GuidesList = [
   },
 ];
 
-export default function Builder(): JSX.Element {
+export default function Backend(): JSX.Element {
   return (
     <Layout title="Builder" description="Learn how to build on MultiversX.">
       <PageHeader

@@ -1,8 +1,5 @@
 import Layout from "@theme/Layout";
-import clsx from "clsx";
-import React from "react";
 import QuickLink from "../components/QuickLink";
-import styles from "../css/styles.module.css";
 import PageHeader from "../layout/Header";
 import PageSection from "../layout/PageSection";
 
@@ -82,7 +79,7 @@ const resourceTags = [
   },
 ];
 
-  export default function NodeRunner(): JSX.Element {
+export default function NodeRunner(): JSX.Element {
   return (
     <Layout
       title="NodeRunner"
@@ -129,4 +126,3 @@ const resourceTags = [
     </Layout>
   );
 }
- 

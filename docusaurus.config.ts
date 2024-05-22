@@ -1,54 +1,47 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import type * as Preset from "@docusaurus/preset-classic";
+import type { Config } from "@docusaurus/types";
+import { themes as prismThemes } from "prism-react-renderer";
 
 const config: Config = {
-  title: 'Mx Guides',
-  tagline: 'Builder Guides for MultiversX',
-  favicon: 'img/favicon.ico',
+  title: "Dapp Guides",
+  tagline: "Builder Guides for Create Dapps on MultiversX",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: "https://guides.cryptobay.space",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: "phybyte",
+  projectName: "dapp-guides",
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
@@ -56,73 +49,41 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: 'Mx Guides',
+      title: "Guides",
       logo: {
-        alt: 'Mx Guides Logo',
-        src: 'img/logo.png',
+        alt: "Mx Guides Logo",
+        src: "img/logo.png",
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
+          href: "/Frontend",
+          label: "Frontend",
+          position: "left",
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          href: "/Backend",
+          label: "Backend",
+          position: "left",
+        },
+        {
+          href: "/NodeRunner",
+          label: "NodeRunner",
+          position: "left",
+        },
+        {
+          href: "https://github.com/phybyte",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
-    // footer: {
-    //   style: 'dark',
-    //   links: [
-    //     {
-    //       title: 'Docs',
-    //       items: [
-    //         {
-    //           label: 'Tutorial',
-    //           to: '/docs/intro',
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       title: 'Community',
-    //       items: [
-    //         {
-    //           label: 'Stack Overflow',
-    //           href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-    //         },
-    //         {
-    //           label: 'Discord',
-    //           href: 'https://discordapp.com/invite/docusaurus',
-    //         },
-    //         {
-    //           label: 'Twitter',
-    //           href: 'https://twitter.com/docusaurus',
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       title: 'More',
-    //       items: [
-    //         {
-    //           label: 'Blog',
-    //           to: '/blog',
-    //         },
-    //         {
-    //           label: 'GitHub',
-    //           href: 'https://github.com/facebook/docusaurus',
-    //         },
-    //       ],
-    //     },
-    //   ],
-    //   copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-    // },
+    stylesheets: ["src/css/custom.css"],
+    footer: {
+      style: "light",
+      copyright: `Made with ❤️ by Phybyte`,
+    },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
