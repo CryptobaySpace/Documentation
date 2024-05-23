@@ -3,7 +3,15 @@ import clsx from "clsx";
 import styles from "../css/styles.module.css";
 import Link from "@docusaurus/Link";
 
-function QuickLink({ docName, title, content, icon }) {
+// Define the interface for the component's props
+interface QuickLinkProps {
+  docName: string;
+  title: string;
+  content: string;
+  icon: React.ReactNode; // Use React.ReactNode for JSX elements like icons
+}
+
+const QuickLink: React.FC<QuickLinkProps> = ({ docName, title, content, icon }) => {
   return (
     <div className={clsx("col col--4 margin-bottom--lg")}>
       <Link className={clsx("card", styles.card)} to={docName}>

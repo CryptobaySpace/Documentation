@@ -5,9 +5,9 @@ import PageSection from "../layout/PageSection";
 
 const Concepts = [
   {
-    title: "Benefits & Risks",
-    content: "Understand the advantages and risks of validating transactions.",
-    docName: "/docs/intro",
+    title: "Why Running Nodes?",
+    content: "What are the advantages of running nodes on MultiversX?",
+    docName: "/docs/node-runner/intro",
     icon: "💰",
   },
   {
