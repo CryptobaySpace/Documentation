@@ -1,6 +1,6 @@
 {
-  "label": "Node Runner",
-  "position": 2,
+  "label": "Dapp",
+  "position": 1,
   "link": {
     "type": "generated-index"
   }

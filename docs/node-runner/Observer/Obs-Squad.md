@@ -1,6 +1,6 @@
 ---
-id: intro
-title: Introduction
+id: obs-squad
+title: Observer Squad
 sidebar_position: 1
 ---
 
