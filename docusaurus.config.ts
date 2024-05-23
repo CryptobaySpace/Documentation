@@ -56,6 +56,7 @@ const config: Config = {
         alt: "Mx Guides Logo",
         src: "img/logo.png",
       },
+
       items: [
         {
           href: "/Frontend",
@@ -73,11 +74,16 @@ const config: Config = {
           position: "left",
         },
         {
-          href: "https://github.com/phybyte",
+          href: "https://github.com/phybyte/mx-guides",
           label: "GitHub",
           position: "right",
         },
       ],
+    },
+    colorMode: {
+      // Disable the light/dark mode switch and force dark mode
+      defaultMode: "dark",
+      disableSwitch: true,
     },
     stylesheets: ["src/css/custom.css"],
     footer: {
