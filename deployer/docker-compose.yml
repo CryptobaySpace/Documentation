@@ -1,0 +1,13 @@
+
+services:
+  docusaurus:
+    image: ghcr.io/phybyte/mx-guides:latest
+    ports:
+      - "${HOST_PORT}:3000"
+    environment:
+      # Define other environment variables if your Docusaurus setup requires them
+      NODE_ENV: production
+    restart: unless-stopped
+
+
+#*/10 * * * * cd /path/to/your/docker-compose-directory && /usr/local/bin/docker-compose up -d
