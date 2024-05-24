@@ -2,11 +2,11 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
 
-import QuickLink from "../components/QuickLink";
+import QuickLink, { QuickLinkProps } from "../components/QuickLink";
 import styles from "../css/styles.module.css";
 import PageHeader from "../layout/Header";
 
-export const TechnoList = [
+export const TechnoLinks: QuickLinkProps[] = [
   {
     title: "Overview",
     content: "Meet the blockchain that offers true internet-scale performance.",
@@ -76,8 +76,8 @@ export default function Home(): JSX.Element {
             Our Technologies
           </h1>
           <div className={clsx("row", styles.row)}>
-            {TechnoList.map((props, idx) => (
-              <QuickLink key={idx} {...props} />
+            {TechnoLinks.map((props, idx) => (
+              <QuickLink key={idx} {...props} disabled={props.disabled} />
             ))}
           </div>
         </div>

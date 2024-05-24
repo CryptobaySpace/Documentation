@@ -69,6 +69,11 @@ const config: Config = {
           position: "left",
         },
         {
+          href: "/Assets",
+          label: "Assets",
+          position: "left",
+        },
+        {
           href: "/Observer",
           label: "Observer",
           position: "left",
