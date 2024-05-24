@@ -8,7 +8,7 @@ const CoreConceptsLinks: QuickLinkProps[] = [
     title: "Architecture",
     content:
       "Discover a robust architecture of frontend applications on MultiversX.",
-    docName: "/docs/intro",
+    docName: "/docs/dapp/frontend/architecture",
     icon: "🏗️",
     disabled: true,
   },
@@ -16,9 +16,8 @@ const CoreConceptsLinks: QuickLinkProps[] = [
     title: "Technologies",
     content:
       "Explore the technologies used to build our frontend applications (Vite, React, Typecript, Chakra UI).",
-    docName: "/docs/intro",
+    docName: "/docs/dapp/frontend/technologies",
     icon: "🔧",
-    disabled: true,
   },
 ];
 
