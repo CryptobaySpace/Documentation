@@ -21,7 +21,7 @@ const ConceptsLinks: QuickLinkProps[] = [
   },
 
   {
-    title: " Staking Provider",
+    title: "Staking Provider",
     content:
       "Learn how to accept user delegations and earn more rewards on MultiversX.",
     docName: "/docs/intro",
@@ -42,8 +42,9 @@ const RunNodesLinks: QuickLinkProps[] = [
     title: "Use Multikey",
     content:
       "Learn how to use Multikey to manage numerous validator nodes on MultiversX.",
-    docName: "/docs/node-runner/validator/multikey",
+    docName: "/docs/intro", //"/docs/node-runner/validator/multikey",
     icon: "🔗",
+    disabled: true,
   },
   {
     title: "Maintenance & Monitoring",
