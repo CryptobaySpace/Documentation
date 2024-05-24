@@ -1,73 +1,69 @@
 import Layout from "@theme/Layout";
-import React from "react";
-import QuickLink from "../components/QuickLink";
-import styles from "../css/styles.module.css";
+import QuickLink, { QuickLinkProps } from "../components/QuickLink";
 import PageHeader from "../layout/Header";
 import PageSection from "../layout/PageSection";
 
-const coreConcepts = [
+const CoreConceptsLinks: QuickLinkProps[] = [
   {
-    title: "Presentation of MultiversX",
-    content: "Discover the core concepts & vision of the MultiversX network.",
-    docName: "/docs/intro",
-    icon: "🌍",
+    title: "Architecture",
+    content:
+      "Discover a robust architecture of frontend applications on MultiversX.",
+    docName: "/docs/dapp/frontend/architecture",
+    icon: "🏗️",
+    disabled: true,
   },
   {
-    title: "Key Features",
-    content: "Explore the key features and benefits of MultiversX.",
-    docName: "/docs/intro",
-    icon: "🌍",
+    title: "Technologies",
+    content:
+      "Explore the technologies used to build our frontend applications (Vite, React, Typecript, Chakra UI).",
+    docName: "/docs/dapp/frontend/technologies",
+    icon: "🔧",
   },
 ];
 
-const technologies = [
+const TemplatesLinks: QuickLinkProps[] = [
   {
-    title: "Secure Proof of Stake",
-    content: "Learn about the vision and mission of the MultiversX network.",
-    docName: "/docs/intro",
-    icon: "🎯",
+    title: "Create a basic frontend",
+    content:
+      "Bootstrap your dapp using the best technologies and integrate the MvX Dapp Sdk properly.",
+    docName: "/docs/dapp/frontend/simple-install",
+    icon: "🚀",
   },
   {
-    title: "Adaptive Sharding",
+    title: "Mature your frontend",
     content:
-      "Ensures scalability and efficiency, optimizes the number of active shards to reduce overhead.",
+      "Add functionalities to your dapp (Theme, Security...) and securily connect it to your backend.",
     docName: "/docs/intro",
-    icon: "📈",
+    icon: "🚢",
+    disabled: true,
   },
   {
-    title: "ESDT Standard",
-    content:
-      "Elrond Standard Digital Token (ESDT) is a token standard on the MultiversX.",
+    title: "Deploy along with backend",
+    content: "Deploy your frontend with docker and CI/CD pipelines.",
     docName: "/docs/intro",
-    icon: "🪙",
-  },
-  {
-    title: "WASM VM",
-    content:
-      "MultiversX employs a unique VM architecture designed to enhance speed and scalability.",
-    docName: "/docs/intro",
-    icon: "⚙️",
+    icon: "🚚",
+    disabled: true,
   },
 ];
 
 export default function Frontend(): JSX.Element {
   return (
     <Layout
-      title="Learn"
-      description="Explore the MultiversX ecosystem and learn how to build, validate, and participate in the network."
+      title="Frontend"
+      description="Create frontend applications on MultiversX."
     >
       <PageHeader
-        title="Discover MultiversX"
-        subtitle="Dive into our technology and ecosystem."
+        title="Frontend Journey"
+        subtitle="Learn how to create frontend services for your Dapp."
       />
       <PageSection title="Core Concepts">
-        {coreConcepts.map((props, idx) => (
-          <QuickLink key={idx} {...props} />
+        {CoreConceptsLinks.map((props, idx) => (
+          <QuickLink key={idx} {...props} disabled={props.disabled} />
         ))}
       </PageSection>
-      <PageSection title="Technologies">
-        {technologies.map((props, idx) => (
-          <QuickLink key={idx} {...props} />
+      <PageSection title="Templates">
+        {TemplatesLinks.map((props, idx) => (
+          <QuickLink key={idx} {...props} disabled={props.disabled} />
         ))}
       </PageSection>
     </Layout>

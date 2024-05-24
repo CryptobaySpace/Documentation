@@ -1,7 +1,7 @@
 ---
 id: requirements
 title: Requirements
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Validator Requirements

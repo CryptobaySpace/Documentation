@@ -51,10 +51,10 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "Guides",
       logo: {
         alt: "Mx Guides Logo",
         src: "img/logo.png",
+        href: "/",
       },
 
       items: [
@@ -69,8 +69,18 @@ const config: Config = {
           position: "left",
         },
         {
-          href: "/NodeRunner",
-          label: "NodeRunner",
+          href: "/Assets",
+          label: "Assets",
+          position: "left",
+        },
+        {
+          href: "/Observer",
+          label: "Observer",
+          position: "left",
+        },
+        {
+          href: "/Validator",
+          label: "Validator",
           position: "left",
         },
         {

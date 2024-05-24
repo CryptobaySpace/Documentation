@@ -1,75 +1,73 @@
 import Layout from "@theme/Layout";
-import QuickLink from "../components/QuickLink";
+import QuickLink, { QuickLinkProps } from "../components/QuickLink";
 import PageHeader from "../layout/Header";
 import PageSection from "../layout/PageSection";
 
-export const BuilderList = [
+const CoreConceptsLinks: QuickLinkProps[] = [
   {
-    title: "Why build on MultiversX ?",
+    title: "Architecture",
     content:
-      "Discover the power of our technology and the benefits of building in our ecosystem.",
+      "Discover a robust architecture of backend applications on MultiversX.",
     docName: "/docs/intro",
-    icon: "🛠️",
+    icon: "🏗️",
+    disabled: true,
   },
   {
-    title: "Build a DApp",
+    title: "Technologies",
     content:
-      "Learn how to build your decentralized application step by step on MultiversX.",
+      "Explore the technologies used to build our backend applications (NestJS, Prisma, Docker).",
     docName: "/docs/intro",
-    icon: "🌍",
-  },
-  {
-    title: "Build a Smart Contract",
-    content: "Follow detailed guides to develop and deploy smart contracts.",
-    docName: "/docs/intro",
-    icon: "📜",
+    icon: "🔧",
+    disabled: true,
   },
 ];
 
-export const GuidesList = [
+const TemplatesLinks: QuickLinkProps[] = [
   {
-    title: "Manage a Wallet",
+    title: "Create a basic backend",
     content:
-      "Learn how to create, manage, and use a MultiversX wallet with availables technologies.",
+      "Bootstrap your backend using the best technologies and integrate the MvX Dapp Sdk properly.",
     docName: "/docs/intro",
-    icon: "📱",
+    icon: "🚀",
+    disabled: true,
   },
   {
-    title: "Create a Token",
+    title: "Mature your backend",
     content:
-      "Issue your own tokens on MultiversX with our ESDT token standard.",
+      "Add functionalities to your dapp (Theme, Security...) and securily connect it to your backend.",
     docName: "/docs/intro",
-    icon: "🔷",
+    icon: "🚢",
+    disabled: true,
   },
-
   {
-    title: "Create an NFT",
-    content: "Create and manage your own NFTs on MultiversX.",
+    title: "Deploy along with frontend",
+    content: "Deploy your backend with docker and CI/CD pipelines.",
     docName: "/docs/intro",
-    icon: "🔷",
+    icon: "🚚",
+    disabled: true,
   },
 ];
 
 export default function Backend(): JSX.Element {
   return (
-    <Layout title="Builder" description="Learn how to build on MultiversX.">
+    <Layout title="Backend" description="Learn how to create backend services.">
       <PageHeader
-        title="Builders Journeys"
-        subtitle="Choose your path you must."
+        title="Backend Journey"
+        subtitle="Learn how to create backend services for your Dapp."
       />
-      <PageSection title="Builder Paths">
-        {BuilderList.map((props, idx) => (
+      <PageSection title="Core Concepts">
+        {CoreConceptsLinks.map((props, idx) => (
           <QuickLink key={idx} {...props} />
         ))}
       </PageSection>
       <PageSection title="Guides">
-        {GuidesList.map((props, idx) => (
-          <QuickLink key={idx} {...props} />
+        {TemplatesLinks.map((props, idx) => (
+          <QuickLink key={idx} {...props} disabled={props.disabled} />
         ))}
       </PageSection>
       {/* <PageSection title="SDKs">
         {sdks.map((props, idx) => (
-              <QuickLink key={idx} {...props} />
+              <QuickLink key={idx} {...props} disabled={props.disabled}/>
             ))}
       </PageSection> */}
     </Layout>

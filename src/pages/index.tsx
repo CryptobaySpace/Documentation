@@ -2,16 +2,17 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
 
-import QuickLink from "../components/QuickLink";
+import QuickLink, { QuickLinkProps } from "../components/QuickLink";
 import styles from "../css/styles.module.css";
 import PageHeader from "../layout/Header";
 
-export const TechnoList = [
+export const TechnoLinks: QuickLinkProps[] = [
   {
     title: "Overview",
     content: "Meet the blockchain that offers true internet-scale performance.",
     docName: "/docs/intro",
     icon: "💡",
+    disabled: true,
   },
   {
     title: "Secure Proof of Stake",
@@ -19,6 +20,7 @@ export const TechnoList = [
       "Explore the efficiency and security benefits of SPoS over traditional consensus models.",
     docName: "/docs/intro",
     icon: "🔒",
+    disabled: true,
   },
   {
     title: "SpaceVM",
@@ -26,6 +28,7 @@ export const TechnoList = [
       "Dive into the capabilities and roles of the Space Virtual Machine in smart contract execution.",
     docName: "/docs/intro",
     icon: "🌌",
+    disabled: true,
   },
   {
     title: "Adaptive State Sharding",
@@ -33,6 +36,7 @@ export const TechnoList = [
       "Understand how MultiversX achieves high scalability through state sharding.",
     docName: "/docs/intro",
     icon: "🧩",
+    disabled: true,
   },
   {
     title: "ESDT Token Standard",
@@ -40,6 +44,7 @@ export const TechnoList = [
       "Learn about MultiversX's token standards, including features and advantages of ESDT.",
     docName: "/docs/intro",
     icon: "🪙",
+    disabled: true,
   },
   {
     title: "Sovereign Chains",
@@ -47,6 +52,7 @@ export const TechnoList = [
       "Explore how to build and manage custom blockchain solutions within the MultiversX ecosystem.",
     docName: "/docs/intro",
     icon: "🌐",
+    disabled: true,
   },
 ];
 
@@ -76,8 +82,8 @@ export default function Home(): JSX.Element {
             Our Technologies
           </h1>
           <div className={clsx("row", styles.row)}>
-            {TechnoList.map((props, idx) => (
-              <QuickLink key={idx} {...props} />
+            {TechnoLinks.map((props, idx) => (
+              <QuickLink key={idx} {...props} disabled={props.disabled} />
             ))}
           </div>
         </div>
