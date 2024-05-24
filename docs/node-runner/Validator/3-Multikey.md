@@ -1,12 +1,12 @@
 ---
-id: installation
-title: Installation
+id: Multikey
+title: Multikey
 sidebar_position: 1
 ---
 
 # Multikey Installation Guide
 
-Welcome to the Multiversx Multikey Validation Installation Guide! This guide will walk you through the process of setting up Multiversx on your Ubuntu 22.04 LTS server. Ensure you have the necessary prerequisites and follow the steps carefully to establish a secure and efficient multikey validator node setup.
+If you want to run more than 3 n This guide will walk you through the process of setting up Multiversx on your Ubuntu 22.04 LTS server. Ensure you have the necessary prerequisites and follow the steps carefully to establish a secure and efficient multikey validator node setup.
 
 
 ## Requirements
@@ -40,11 +40,6 @@ sudo apt -y update
 # Upgrade installed packages to the latest versions
 sudo apt -y upgrade
 
-# Perform a distribution upgrade, if needed
-sudo apt -y dist-upgrade
-
-# --  Or with a single command
-sudo apt -y update && sudo apt -y upgrade && sudo apt -y dist-upgrade
 ```
 
 
@@ -53,14 +48,19 @@ sudo apt -y update && sudo apt -y upgrade && sudo apt -y dist-upgrade
 We recommend not running nodes as the root user. Create a new user and add it to the sudo group.
 
 ```bash
+# Set the username as an environment variable
+export USERNAME=phybyte
+```
+
+```bash
 # Create a new user with sudo privileges and a home directory
-sudo useradd -s /bin/bash -d /home/phybyte -m -G sudo phybyte
+sudo useradd -s /bin/bash -d /home/$USERNAME -m -G sudo $USERNAME
 
 # Allow the new user to run sudo commands without a password
-echo 'phybyte ALL=(ALL) NOPASSWD:ALL' | sudo tee -a /etc/sudoers.d/myOverrides
+echo "$USERNAME ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers.d/myOverrides
 
 # Switch to the new user to continue the setup
-sudo su phybyte
+sudo su $USERNAME
 ```
 
 ### 3. Download Node sources

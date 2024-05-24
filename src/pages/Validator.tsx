@@ -63,33 +63,17 @@ const ToolsQuickLinks = [
   },
 ];
 
-const resourceTags = [
-  {
-    title: "Discord",
-    color: "purple",
-    icon: "🗨️",
-    url: "https://discordapp.com",
-  },
-  { title: "Telegram", color: "blue", icon: "📬", url: "https://telegram.org" },
-  {
-    title: "External Resources",
-    color: "green",
-    icon: "🌐",
-    url: "https://example.com",
-  },
-];
 
-export default function NodeRunner(): JSX.Element {
+export default function Validator(): JSX.Element {
   return (
     <Layout
-      title="NodeRunner"
+      title="Validator"
       description="Learn how to run nodes & validate on MultiversX."
     >
       <PageHeader
-        title="NodeRunner Path"
-        subtitle="Take part in securing the network."
+        title="Validator Path"
+        subtitle="Learn how to run nodes & validate on MultiversX."
       />
-
       <PageSection title="Core Concepts">
         {Concepts.map((props, idx) => (
           <QuickLink key={idx} {...props} />
@@ -107,22 +91,6 @@ export default function NodeRunner(): JSX.Element {
           <QuickLink key={idx} {...props} />
         ))}
       </PageSection>
-
-      {/* <PageSection title="Need Supports?">
-        {resourceTags.map((tag) => (
-          <a
-            key={tag.title}
-            className={clsx("tag", styles.tag)}
-            href={tag.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ backgroundColor: tag.color, textDecoration: "none" }}
-          >
-            <span className={styles.icon}>{tag.icon}</span>
-            <span>{tag.title}</span>
-          </a>
-        ))}
-      </PageSection> */}
     </Layout>
   );
 }

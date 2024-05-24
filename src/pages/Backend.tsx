@@ -52,10 +52,10 @@ export const GuidesList = [
 
 export default function Backend(): JSX.Element {
   return (
-    <Layout title="Builder" description="Learn how to build on MultiversX.">
+    <Layout title="Backend" description="Learn how to create backend services.">
       <PageHeader
-        title="Builders Journeys"
-        subtitle="Choose your path you must."
+        title="Backend Journey"
+        subtitle="Learn how to create backend services for your Dapp."
       />
       <PageSection title="Builder Paths">
         {BuilderList.map((props, idx) => (
