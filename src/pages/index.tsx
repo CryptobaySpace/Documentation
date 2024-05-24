@@ -12,6 +12,7 @@ export const TechnoLinks: QuickLinkProps[] = [
     content: "Meet the blockchain that offers true internet-scale performance.",
     docName: "/docs/intro",
     icon: "💡",
+    disabled: true,
   },
   {
     title: "Secure Proof of Stake",
@@ -19,6 +20,7 @@ export const TechnoLinks: QuickLinkProps[] = [
       "Explore the efficiency and security benefits of SPoS over traditional consensus models.",
     docName: "/docs/intro",
     icon: "🔒",
+    disabled: true,
   },
   {
     title: "SpaceVM",
@@ -26,6 +28,7 @@ export const TechnoLinks: QuickLinkProps[] = [
       "Dive into the capabilities and roles of the Space Virtual Machine in smart contract execution.",
     docName: "/docs/intro",
     icon: "🌌",
+    disabled: true,
   },
   {
     title: "Adaptive State Sharding",
@@ -33,6 +36,7 @@ export const TechnoLinks: QuickLinkProps[] = [
       "Understand how MultiversX achieves high scalability through state sharding.",
     docName: "/docs/intro",
     icon: "🧩",
+    disabled: true,
   },
   {
     title: "ESDT Token Standard",
@@ -40,6 +44,7 @@ export const TechnoLinks: QuickLinkProps[] = [
       "Learn about MultiversX's token standards, including features and advantages of ESDT.",
     docName: "/docs/intro",
     icon: "🪙",
+    disabled: true,
   },
   {
     title: "Sovereign Chains",
@@ -47,6 +52,7 @@ export const TechnoLinks: QuickLinkProps[] = [
       "Explore how to build and manage custom blockchain solutions within the MultiversX ecosystem.",
     docName: "/docs/intro",
     icon: "🌐",
+    disabled: true,
   },
 ];
 
