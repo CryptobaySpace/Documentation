@@ -65,8 +65,8 @@ export default function Home(): JSX.Element {
       description="A highly scalable, fast and secure blockchain platform for distributed apps, enterprise use cases and the new internet economy."
     >
       <PageHeader
-        title="Welcome to the MultiversX Docs!"
-        subtitle="Choose your path you must."
+        title="Discover MultiversX Technologies!"
+        subtitle="A highly scalable, fast and secure blockchain adapted to the new internet economy"
       />
       <section className={styles.features}>
         <div className={clsx("container", styles.container)}>
@@ -79,7 +79,7 @@ export default function Home(): JSX.Element {
               "text-decoration--underline"
             )}
           >
-            Our Technologies
+            Technologies
           </h1>
           <div className={clsx("row", styles.row)}>
             {TechnoLinks.map((props, idx) => (
