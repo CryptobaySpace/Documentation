@@ -1,6 +1,6 @@
 
 services:
-  docusaurus:
+  mx-guides:
     image: ghcr.io/phybyte/mx-guides:latest
     ports:
       - "${HOST_PORT}:3000"
