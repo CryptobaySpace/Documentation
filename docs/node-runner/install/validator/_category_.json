@@ -1,6 +1,6 @@
 {
-  "label": "Node Runner",
-  "position": 3,
+  "label": "Validator Nodes",
+  "position": 2,
   "link": {
     "type": "generated-index"
   }

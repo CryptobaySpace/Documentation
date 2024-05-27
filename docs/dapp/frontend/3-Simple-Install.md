@@ -51,6 +51,32 @@ We will follow the official guide to install Chakra UI with Vite. You can find t
 npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
 ```
 
+Modify main.tsx for integrate chakra
+
+``` typescript
+
+import { ChakraProvider } from "@chakra-ui/react";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.tsx";
+
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <ChakraProvider> // Surround your App with the ChakraProvider.
+      <App />
+    </ChakraProvider>
+  </React.StrictMode>
+);
+```
+### Create Layout
+
+#### Setup Router
+
+creation of 2 pages ( Unlock and home)
+
+
+
+
 # External Links
 
 You can find the final code for this section in the [dapp-frontend-basic](https://github/phybyte/dapp-template-basic) repository.

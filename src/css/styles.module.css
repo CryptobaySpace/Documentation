@@ -88,3 +88,35 @@
   color: white; /* Assuming you want a light text color, adjust as needed */
   background-color: #007bff; /* Default color, should be overridden inline */
 }
+
+
+.fullWidthContainer .fullWidthCard {
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;  /* Space between cards */
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--ifm-font-color-base);
+  border-radius: 0.65rem;
+  box-shadow: 0 0 2px 2px rgba(0, 255, 255, 0.6);
+  transition-property: all;
+  transition-duration: 0.2s;
+  padding: 1.5rem 1.8rem 1.7rem;
+  max-width: 70%;
+}
+
+.fullWidthCard h3 {
+  font-size: 1.063rem;
+  color: var(--ifm-color-primary);
+  font-family: Montserrat, sans-serif;
+}
+.fullWidthCard p {
+  margin-bottom: 0;
+}
+.fullWidthCard:hover {
+  text-decoration: none;
+  box-shadow: 0 0 10px 2px rgba(0, 255, 255, 0.6);
+}
+.fullWidthCard:hover p {
+  color: var(--ifm-color-primary);
+}

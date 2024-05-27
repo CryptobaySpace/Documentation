@@ -4,7 +4,7 @@ import styles from "../css/styles.module.css";
 
 function PageHeader(props) {
   return (
-    <header className={clsx(styles.heroBanner)}>
+    <header className={clsx(styles.heroBanner, styles.features)}>
       <div className="container">
         <h1 className={clsx("hero__title")}>{props.title}</h1>
         <p className={clsx("hero__subtitle")}>{props.subtitle}</p>

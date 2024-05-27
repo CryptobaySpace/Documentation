@@ -2,57 +2,53 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
 
-import PageLink, { PageLinkProps } from "../components/PageLink";
+import { PageLinkProps } from "../components/PageLink";
+import PathLink from "../components/PathLink";
 import styles from "../css/styles.module.css";
 import PageHeader from "../layout/Header";
 
-export const TechnoLinks: PageLinkProps[] = [
+export const PathLinks: PageLinkProps[] = [
   {
-    title: "Overview",
-    content: "Meet the blockchain that offers true internet-scale performance.",
-    docName: "/docs/intro",
-    icon: "💡",
-    disabled: true,
+    title: "Dapp Frontend Development",
+    content:
+      "Discover how to craft compelling frontends for your decentralized applications with our comprehensive guides.",
+    docName: "/frontend",
+    icon: "🖥️", // Changed to a more typical computer monitor icon.
   },
   {
-    title: "Secure Proof of Stake",
+    title: "Backend Development",
     content:
-      "Explore the efficiency and security benefits of SPoS over traditional consensus models.",
-    docName: "/docs/intro",
-    icon: "🔒",
-    disabled: true,
+      "Dive into backend solutions for decentralized applications, learning to integrate and manage the server-side.",
+    docName: "/backend",
+    icon: "⚙️", // Represents settings or machinery, suitable for backend processes.
   },
   {
-    title: "SpaceVM",
+    title: "Managing Assets on MultiversX",
     content:
-      "Dive into the capabilities and roles of the Space Virtual Machine in smart contract execution.",
-    docName: "/docs/intro",
-    icon: "🌌",
-    disabled: true,
+      "Learn how to create, manage, and innovate with assets on MultiversX, from NFTs to fungible tokens.",
+    docName: "/assets",
+    icon: "🏦", // A bank icon to symbolize asset management.
   },
   {
-    title: "Adaptive State Sharding",
+    title: "Observer Insights",
     content:
-      "Understand how MultiversX achieves high scalability through state sharding.",
-    docName: "/docs/intro",
-    icon: "🧩",
-    disabled: true,
+      "Unlock the power of observing and interpreting data on the blockchain to enhance your applications with observer nodes.",
+    docName: "/observer",
+    icon: "🔍", // A magnifying glass icon to represent observation and insight.
   },
   {
-    title: "ESDT Token Standard",
+    title: "Validator Node Operations",
     content:
-      "Learn about MultiversX's token standards, including features and advantages of ESDT.",
-    docName: "/docs/intro",
-    icon: "🪙",
-    disabled: true,
+      "Secure MultiversX by running a validator node. Learn about staking, delegation, and network security.",
+    docName: "/validator",
+    icon: "🛡️", // A shield icon representing security and protection.
   },
   {
-    title: "Sovereign Chains",
+    title: "Building Sovereign Chains",
     content:
-      "Explore how to build and manage custom blockchain solutions within the MultiversX ecosystem.",
-    docName: "/docs/intro",
-    icon: "🌐",
-    disabled: true,
+      "Explore how to construct and manage your own private blockchain within the MultiversX ecosystem.",
+    docName: "/sovereign-chains",
+    icon: "🌐", // A globe icon, suitable for representing global or network-wide concepts.
   },
 ];
 
@@ -61,32 +57,18 @@ export default function Home(): JSX.Element {
   console.log("siteConfig", siteConfig);
   return (
     <Layout
-      title="Docs"
-      description="A highly scalable, fast and secure blockchain platform for distributed apps, enterprise use cases and the new internet economy."
+      title="Builder's Guide to MultiversX"
+      description="Unlock the potential of blockchain with our comprehensive development guides."
     >
       <PageHeader
-        title="Discover MultiversX Technologies!"
-        subtitle="A highly scalable, fast and secure blockchain adapted to the new internet economy"
+        title="Embark on Your MultiversX Development Journey"
+        subtitle="Master the essentials with our step-by-step guides and build cutting-edge blockchain solutions."
+        style={{ paddingBottom: "40px" }}
       />
-      <section className={styles.features}>
-        <div className={clsx("container", styles.container)}>
-          <h1
-            className={clsx(
-              "hero__subtitle",
-              "text--center",
-              "justify-content--center",
-              "font-weight--bold",
-              "text-decoration--underline"
-            )}
-          >
-            Technologies
-          </h1>
-          <div className={clsx("row", styles.row)}>
-            {TechnoLinks.map((props, idx) => (
-              <PageLink key={idx} {...props} disabled={props.disabled} />
-            ))}
-          </div>
-        </div>
+      <section className={clsx("container", styles.fullWidthContainer)}>
+        {PathLinks.map((props, idx) => (
+          <PathLink key={idx} {...props} />
+        ))}
       </section>
     </Layout>
   );

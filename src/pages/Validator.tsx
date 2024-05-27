@@ -48,9 +48,8 @@ const RunNodesLinks: PageLinkProps[] = [
   {
     title: "Maintenance & Monitoring",
     content: "Understand how to maintain and monitor your validator node.",
-    docName: "/docs/intro",
+    docName: "/docs/node-runner/install/maintenance",
     icon: "🔧",
-    disabled: true,
   },
 ];
 

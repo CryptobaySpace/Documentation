@@ -16,9 +16,8 @@ const CoreConceptsLinks: PageLinkProps[] = [
     title: "Technologies",
     content:
       "Explore the technologies used to build our backend applications (NestJS, Prisma, Docker).",
-    docName: "/docs/intro",
+    docName: "/docs/dapp/backend/technologies",
     icon: "🔧",
-    disabled: true,
   },
 ];
 

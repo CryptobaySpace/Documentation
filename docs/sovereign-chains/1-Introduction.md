@@ -1,8 +1,7 @@
 ---
-id: introduction
+id: intro
 title: Introduction
 sidebar_position: 1
 ---
 
-
-# Introduction Observer Nodes
+# Introduction Sovereign Chains

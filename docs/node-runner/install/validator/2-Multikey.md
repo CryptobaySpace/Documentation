@@ -1,12 +1,14 @@
 ---
 id: multikey
 title: Multikey
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # Multikey Installation Guide
 
-If you want to run more than 3 n This guide will walk you through the process of setting up Multiversx on your Ubuntu 22.04 LTS server. Ensure you have the necessary prerequisites and follow the steps carefully to establish a secure and efficient multikey validator node setup.
+If you want to run more nodes than the number of shards, the multikey approach would be more efficient in term of performances and rentability. 
+
+This guide will walk you through the process of setting up Multiversx on your Ubuntu server. Ensure you have the necessary prerequisites and follow the steps carefully to establish a secure and efficient multikey validator node setup.
 
 
 ## Requirements
@@ -15,13 +17,14 @@ Before you start the installation process, make sure you have the following:
 
 - An Ubuntu 22.04 LTS server with the following specifications:
   - Bare metal setup
-  - Secured through SSH key with a password (No direct password connection)
   - 4 Cores / 8 Threads
   - 32 GB RAM
   - 500 GB SSD
   - 1 Gbps Network (Unlimited)
+- Setup and secure your machine by following our [Guide](/docs/node-runner/setup-machine)
 
 - ValidatorKey.pem file for each node you intend to run on this multikey machine setup.
+- A minimum of 1250 EGLD to start a Staking Provider or 2500 EGLD per private nodes.
 
 ## Procedure
 
@@ -233,16 +236,6 @@ You have to turn them off and on again to take the modifications into considerat
   ./script.sh start
 ```
 
-## Connect with Multiversx Community
-
-Thank you for using the Multiversx Multikey Validation Installation Guide! For more updates, discussions, and support, connect with the Multiversx community through their official channels:
-
+ TODO: Move to Presentation Validator
 ### Telegram Channels:
-
 [Multiversx Validators Channel](https://t.me/MultiversXValidators)
-
-Multiversx Community Chat
-
-### Twitter:
-
-Follow me on Twitter for more guides: [@Phybyte](https://twitter.com/Phybyte)
