@@ -1,9 +1,9 @@
 import Layout from "@theme/Layout";
-import QuickLink, { QuickLinkProps } from "../components/QuickLink";
+import PageLink, { PageLinkProps } from "../components/PageLink";
 import PageHeader from "../layout/Header";
 import PageSection from "../layout/PageSection";
 
-const CoreConceptsLinks: QuickLinkProps[] = [
+const CoreConceptsLinks: PageLinkProps[] = [
   {
     title: "ESDT Standard",
     content:
@@ -21,7 +21,7 @@ const CoreConceptsLinks: QuickLinkProps[] = [
   },
 ];
 
-const CreateAssetLinks: QuickLinkProps[] = [
+const CreateAssetLinks: PageLinkProps[] = [
   {
     title: "Issue & Manage a Token",
     content:
@@ -46,7 +46,7 @@ const CreateAssetLinks: QuickLinkProps[] = [
     disabled: true,
   },
 ];
-const UtilityAssetsLinks: QuickLinkProps[] = [
+const UtilityAssetsLinks: PageLinkProps[] = [
   {
     title: "Distribute your asset",
     content:
@@ -67,26 +67,24 @@ const UtilityAssetsLinks: QuickLinkProps[] = [
 
 export default function Assets(): JSX.Element {
   return (
-    <Layout
-      title="Assets"
-    >
+    <Layout title="Assets">
       <PageHeader
         title="Assets & Utilities"
         subtitle="Learn how to create & manage assets on MultiversX"
       />
       <PageSection title="Concepts">
         {CoreConceptsLinks.map((props, idx) => (
-          <QuickLink key={idx} {...props} disabled={props.disabled} />
+          <PageLink key={idx} {...props} disabled={props.disabled} />
         ))}
       </PageSection>
       <PageSection title="Create">
         {CreateAssetLinks.map((props, idx) => (
-          <QuickLink key={idx} {...props} disabled={props.disabled} />
+          <PageLink key={idx} {...props} disabled={props.disabled} />
         ))}
       </PageSection>
       <PageSection title="Utilities">
         {UtilityAssetsLinks.map((props, idx) => (
-          <QuickLink key={idx} {...props} disabled={props.disabled} />
+          <PageLink key={idx} {...props} disabled={props.disabled} />
         ))}
       </PageSection>
     </Layout>

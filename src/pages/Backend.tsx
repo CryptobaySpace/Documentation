@@ -1,9 +1,9 @@
 import Layout from "@theme/Layout";
-import QuickLink, { QuickLinkProps } from "../components/QuickLink";
+import PageLink, { PageLinkProps } from "../components/PageLink";
 import PageHeader from "../layout/Header";
 import PageSection from "../layout/PageSection";
 
-const CoreConceptsLinks: QuickLinkProps[] = [
+const CoreConceptsLinks: PageLinkProps[] = [
   {
     title: "Architecture",
     content:
@@ -22,7 +22,7 @@ const CoreConceptsLinks: QuickLinkProps[] = [
   },
 ];
 
-const TemplatesLinks: QuickLinkProps[] = [
+const TemplatesLinks: PageLinkProps[] = [
   {
     title: "Create a basic backend",
     content:
@@ -57,17 +57,17 @@ export default function Backend(): JSX.Element {
       />
       <PageSection title="Core Concepts">
         {CoreConceptsLinks.map((props, idx) => (
-          <QuickLink key={idx} {...props} />
+          <PageLink key={idx} {...props} />
         ))}
       </PageSection>
       <PageSection title="Guides">
         {TemplatesLinks.map((props, idx) => (
-          <QuickLink key={idx} {...props} disabled={props.disabled} />
+          <PageLink key={idx} {...props} disabled={props.disabled} />
         ))}
       </PageSection>
       {/* <PageSection title="SDKs">
         {sdks.map((props, idx) => (
-              <QuickLink key={idx} {...props} disabled={props.disabled}/>
+              <PageLink key={idx} {...props} disabled={props.disabled}/>
             ))}
       </PageSection> */}
     </Layout>
