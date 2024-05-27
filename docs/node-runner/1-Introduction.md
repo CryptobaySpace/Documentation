@@ -4,7 +4,7 @@ title: Introduction
 sidebar_position: 1
 ---
 
-# Introduction Node Runner
+# Running Nodes on MultiversX
 
 This section will explain how to run nodes on multiversx network, and benefits from their advantages.
 

@@ -1,6 +1,6 @@
 ---
 id: multikey
-title: Multikey
+title: Install Multikey
 sidebar_position: 2
 ---
 

@@ -42,13 +42,13 @@ const RunNodesLinks: PageLinkProps[] = [
     title: "Use Multikey",
     content:
       "Learn how to use Multikey to manage numerous validator nodes on MultiversX.",
-    docName: "/docs/node-runner/validator/multikey",
+    docName: "/docs/node-runner/install/validator/multikey",
     icon: "🔗",
   },
   {
     title: "Maintenance & Monitoring",
     content: "Understand how to maintain and monitor your validator node.",
-    docName: "/docs/node-runner/install/maintenance",
+    docName: "/docs/node-runner/maintenance",
     icon: "🔧",
   },
 ];

@@ -5,15 +5,15 @@ sidebar_position: 2
 ---
 
 # Frontend technologies
-
 As a seasoned software developer with experience in building scalable and maintainable web applications, I have had the opportunity to explore
 numerous frameworks and technologies that help me quickly bootstrap and maintain my projects efficiently. Throughout my career, I have found 
 that a robust set of tools and best practices can make a significant difference in the lifecycle of a web application. In this article, I will
 share some of the key frameworks and technologies that I have used in the past to build scalable and maintainable web applications, with the 
 goal of helping others who may be new to web development to get started quickly and efficiently.
 
-## React
+---
 
+## React
 React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.
 
 It is often used with other tools to make development easier, such as:
@@ -25,8 +25,9 @@ browsers.
 
 React is a powerful tool for building complex user interfaces with JavaScript. It has a steep learning curve, but once mastered it can be used to create high-performance web applications quickly. Additionally, there are many resources available for learning and troubleshooting, making it a popular choice among developers.
 
-## Vite
+--- 
 
+## Vite
 Vite.js is a new frontend build tool that have been design with two main goals in mind: to 
 make frontend development faster and more enjoyable, and to provide better support for modern web development practices.
 
@@ -52,8 +53,9 @@ faster build times, better support for modern web development practices, easier 
 By following the steps outlined in this presentation, you can get started with using Vite.js to manage your codebase and build your 
 applications quickly and efficiently.
 
-## Chakra UI
+---
 
+## Chakra UI
 Chakra UI is a popular frontend framework that provides a set of pre-designed components and utilities for building user interfaces. It was 
 designed to make it easy to create high-quality, visually appealing web applications with minimal effort. Chakra UI uses React as its base technology, making it compatible with any other React component or library.
 
@@ -77,8 +79,8 @@ In conclusion, Chakra UI is a powerful frontend framework that provides a set of
 interfaces. Its key features include high-quality components, ease of use, compatibility with React, and customization options. By following 
 the steps outlined in this presentation, you can get started with using Chakra UI to build your web applications quickly and efficiently
 
+---
 ## Zustand
-
 Zustand is a React state management library that provides a simple and efficient way to manage the state of your components. It was designed 
 to make it easy to manage the state of your React application without having to write unnecessary code.
 
@@ -105,9 +107,9 @@ In conclusion, Zustand is a powerful and efficient React state management librar
 performance, and extensibility. By using Zustand for your React state management needs, you can enjoy the benefits of efficient code, 
 simplified development, improved performance, and better scalability. So, let's get started managing your React state with Zustand today!
 
+---
 
 ## Docker
-
 Docker is a popular containerization platform that allows developers to package their applications and dependencies into a single container 
 that can be run on any machine where Docker is installed. Here are some key features of Docker:
 

@@ -1,7 +1,7 @@
 ---
 id: maintenance
 title: Maintenance
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Node Maintenance
@@ -58,3 +58,11 @@ You can the check the synchronizing status of your different nodes with:
 
 TODO:
 ```
+
+ ## Operations
+
+ ### Reset Database
+
+ ### Reset Node Installation
+
+ ### Add another ke

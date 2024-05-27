@@ -1,6 +1,6 @@
 ---
 id: single-node
-title: Single Node
+title: Install Single Node
 sidebar_position: 1
 ---
 
