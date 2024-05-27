@@ -1,9 +1,9 @@
 import Layout from "@theme/Layout";
-import QuickLink, { QuickLinkProps } from "../components/QuickLink";
+import PageLink, { PageLinkProps } from "../components/PageLink";
 import PageHeader from "../layout/Header";
 import PageSection from "../layout/PageSection";
 
-const ConceptsLinks: QuickLinkProps[] = [
+const ConceptsLinks: PageLinkProps[] = [
   {
     title: "What are Observing Squad?",
     content:
@@ -22,7 +22,7 @@ const ConceptsLinks: QuickLinkProps[] = [
   },
 ];
 
-const RunNodesLinks: QuickLinkProps[] = [
+const RunNodesLinks: PageLinkProps[] = [
   {
     title: "Install Observing Squad",
     content:
@@ -43,9 +43,8 @@ const RunNodesLinks: QuickLinkProps[] = [
     title: "Maintenace & Monitoring",
     content:
       "Understand how to maintain and monitor your observing squad with Zabbix & Grafana.",
-    docName: "/docs/intro",
+    docName: "/docs/node-runner/install/maintenance",
     icon: "🔧",
-    disabled: true,
   },
 ];
 
@@ -62,13 +61,13 @@ export default function Observer(): JSX.Element {
 
       <PageSection title="Core Concepts">
         {ConceptsLinks.map((props, idx) => (
-          <QuickLink key={idx} {...props} disabled={props.disabled} />
+          <PageLink key={idx} {...props} disabled={props.disabled} />
         ))}
       </PageSection>
 
       <PageSection title="Installation">
         {RunNodesLinks.map((props, idx) => (
-          <QuickLink key={idx} {...props} disabled={props.disabled} />
+          <PageLink key={idx} {...props} disabled={props.disabled} />
         ))}
       </PageSection>
     </Layout>

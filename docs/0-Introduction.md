@@ -4,46 +4,45 @@ title: Introduction
 sidebar_position: 0
 ---
 
-# Tutorial Intro
+# Introduction to the Cryptobay Guides
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to the MultiversX guide by [Cryptobay](https://cryptobay.space). Here, you will find numerous resources to help you build in the MultiversX ecosystem. As a builder and validator in this ecosystem for years, I have created various solutions and products, and have extensive knowledge of node management.
 
-## Getting Started
+I decided to share this knowledge to help bootstrap new ideas for those who wish to build on a cutting-edge blockchain with a vibrant community. This documentation is divided into three main sections:
 
-Get started by **creating a new site**.
+- **Dapp**: Learn to create web applications that interact with the blockchain, from simple backend services to dedicated frontends, and their deployment and maintenance. If you have an idea to bring to life, this is the place to start.
+- **NodeRunner**: Learn everything you need to know about Observers and Validators. Run and maintain your nodes with our methods and tools.
+- **Sovereign Chain**: Discover how to run your own blockchain powered by MultiversX technology, while benefiting from the main network.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+These sections will cover most of the MultiversX technologies and show you how to use them to create outstanding solutions within this ecosystem.
 
-### What you'll need
+I have observed many people struggling to find clear guides to bootstrap their ideas, especially guides that provide a proper structure to ensure robustness over time.
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## Dapp
 
-## Generate a new site
+An important aspect of any blockchain project is the interactions from users or off-chain logic.
 
-Generate a new Docusaurus site using the **classic template**.
+### Frontend
+You will find numerous guides on creating your React app with the MultiversX SDK, interacting with the blockchain, and creating a user-friendly interface. Additionally, you will get templates and examples to start your project.
 
-The classic template will automatically be added to your project after you run the command:
+### Backend
+You will find numerous guides on creating your backend with the MultiversX SDK, interacting with the blockchain, and creating a secure and scalable backend. Additionally, you will get templates and examples to start your project.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+More to come soon...
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+### Infrastructure
 
-## Start your site
+You will find 
 
-Run the development server:
+## Node Runner
+It is possible to 
+### Observer
 
-```bash
-cd my-website
-npm run start
-```
+### Validator
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+# External Ressources
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Official MultiversX Documentation 
+Official MultiversX Github Repository

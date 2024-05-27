@@ -1,9 +1,9 @@
 import Layout from "@theme/Layout";
-import QuickLink, { QuickLinkProps } from "../components/QuickLink";
+import PageLink, { PageLinkProps } from "../components/PageLink";
 import PageHeader from "../layout/Header";
 import PageSection from "../layout/PageSection";
 
-const ConceptsLinks: QuickLinkProps[] = [
+const ConceptsLinks: PageLinkProps[] = [
   {
     title: "Why Running Validator Nodes?",
     content:
@@ -30,7 +30,7 @@ const ConceptsLinks: QuickLinkProps[] = [
   },
 ];
 
-const RunNodesLinks: QuickLinkProps[] = [
+const RunNodesLinks: PageLinkProps[] = [
   {
     title: "Setup a Validator Node",
     content: "Learn how to set up and run a validator node on MultiversX.",
@@ -42,15 +42,14 @@ const RunNodesLinks: QuickLinkProps[] = [
     title: "Use Multikey",
     content:
       "Learn how to use Multikey to manage numerous validator nodes on MultiversX.",
-    docName: "/docs/node-runner/validator/multikey",
+    docName: "/docs/node-runner/install/validator/multikey",
     icon: "🔗",
   },
   {
     title: "Maintenance & Monitoring",
     content: "Understand how to maintain and monitor your validator node.",
-    docName: "/docs/intro",
+    docName: "/docs/node-runner/maintenance",
     icon: "🔧",
-    disabled: true,
   },
 ];
 
@@ -66,13 +65,13 @@ export default function Validator(): JSX.Element {
       />
       <PageSection title="Core Concepts">
         {ConceptsLinks.map((props, idx) => (
-          <QuickLink key={idx} {...props} />
+          <PageLink key={idx} {...props} />
         ))}
       </PageSection>
 
       <PageSection title="Run Nodes">
         {RunNodesLinks.map((props, idx) => (
-          <QuickLink key={idx} {...props} disabled={props.disabled} />
+          <PageLink key={idx} {...props} disabled={props.disabled} />
         ))}
       </PageSection>
     </Layout>

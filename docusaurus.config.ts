@@ -17,7 +17,7 @@ const config: Config = {
   organizationName: "phybyte",
   projectName: "dapp-guides",
 
-  onBrokenLinks: "warn",
+  onBrokenLinks: "warn", //"throw",
   onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
@@ -49,10 +49,9 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
     navbar: {
       logo: {
-        alt: "Mx Guides Logo",
+        alt: "CryptoBay Guides",
         src: "img/logo.png",
         href: "/",
       },
@@ -61,27 +60,26 @@ const config: Config = {
         {
           href: "/Frontend",
           label: "Frontend",
-          position: "left",
         },
         {
           href: "/Backend",
           label: "Backend",
-          position: "left",
         },
         {
           href: "/Assets",
           label: "Assets",
-          position: "left",
         },
         {
           href: "/Observer",
           label: "Observer",
-          position: "left",
         },
         {
           href: "/Validator",
           label: "Validator",
-          position: "left",
+        },
+        {
+          href: "/Sovereign-Chains",
+          label: "Sovereign Chains",
         },
         {
           href: "https://github.com/phybyte/mx-guides",
@@ -89,6 +87,7 @@ const config: Config = {
           position: "right",
         },
       ],
+      
     },
     colorMode: {
       // Disable the light/dark mode switch and force dark mode

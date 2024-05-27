@@ -4,7 +4,7 @@ import React from "react";
 import styles from "../css/styles.module.css";
 
 // Define the interface for the component's props
-export interface QuickLinkProps {
+export interface PageLinkProps {
   docName: string;
   title: string;
   content: string;
@@ -12,7 +12,7 @@ export interface QuickLinkProps {
   disabled?: boolean; // Optional prop, true by default
 }
 
-const QuickLink: React.FC<QuickLinkProps> = ({
+const PageLink: React.FC<PageLinkProps> = ({
   docName,
   title,
   content,
@@ -54,4 +54,4 @@ const QuickLink: React.FC<QuickLinkProps> = ({
   );
 };
 
-export default QuickLink;
+export default PageLink;
