@@ -2,6 +2,7 @@
   "label": "Dapp",
   "position": 1,
   "link": {
-    "type": "generated-index"
+    "type": "doc",
+    "id": "dapp/intro"
   }
 }

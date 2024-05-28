@@ -2,6 +2,7 @@
   "label": "Install Nodes",
   "position": 3,
   "link": {
-    "type": "generated-index"
+    "type": "doc",
+    "id": "node-runner/install/intro"
   }
 }

@@ -1,10 +1,13 @@
 ---
 id: operation
-title: Keys Operation
+title: Keys Operations
 sidebar_position: 3
 ---
 
 # Keys Operations
+
+If you are running validator nodes, you will need to manage their private keys. This document explains how to generate them and how to use them securely for your different operations
+
 
 ## Generate new key
 
