@@ -48,6 +48,15 @@ const config: Config = {
   ],
 
   themeConfig: {
+    announcementBar: {
+      id: "support_us",
+      content:
+        "💖 Enjoying our documentation? Show your support by delegating EGLD to our Pool! Thank you for your support! 💖",
+
+      backgroundColor: "#00FFFF",
+      textColor: "#091E42",
+      isCloseable: false,
+    },
     // Replace with your project's social card
     navbar: {
       logo: {
@@ -82,7 +91,7 @@ const config: Config = {
           label: "Sovereign Chains",
         },
         {
-          href: "https://github.com/phybyte/mx-guides",
+          href: "https://github.com/CryptobaySpace",
           label: "GitHub",
           position: "right",
         },
