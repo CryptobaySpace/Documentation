@@ -9,7 +9,7 @@ const CoreConceptsLinks: PageLinkProps[] = [
     content:
       "Discover a robust architecture of backend applications on MultiversX.",
     docName: "/docs/intro",
-    icon: "🏗️",
+    icon: "🏛️", // Changed to represent a structured and stable architecture.
     disabled: true,
   },
   {
@@ -17,32 +17,32 @@ const CoreConceptsLinks: PageLinkProps[] = [
     content:
       "Explore the technologies used to build our backend applications (NestJS, Prisma, Docker).",
     docName: "/docs/dapp/backend/technologies",
-    icon: "🔧",
+    icon: "🛠️", // Represents a set of tools and technologies.
   },
 ];
 
 const TemplatesLinks: PageLinkProps[] = [
   {
-    title: "Create a basic backend",
+    title: "Create a Basic Backend",
     content:
-      "Bootstrap your backend using the best technologies and integrate the MvX Dapp Sdk properly.",
+      "Bootstrap your backend using the best technologies and integrate the MvX Dapp SDK properly.",
     docName: "/docs/intro",
-    icon: "🚀",
+    icon: "🚀", // Represents launching or starting a project.
     disabled: true,
   },
   {
-    title: "Mature your backend",
+    title: "Enhance Your Backend",
     content:
-      "Add functionalities to your dapp (Theme, Security...) and securily connect it to your backend.",
+      "Add functionalities to your dapp (theme, security) and securely connect it to your frontend.",
     docName: "/docs/intro",
-    icon: "🚢",
+    icon: "🔒", // Changed to represent security and enhancement.
     disabled: true,
   },
   {
-    title: "Deploy along with frontend",
-    content: "Deploy your backend with docker and CI/CD pipelines.",
+    title: "Deploy Along with Frontend",
+    content: "Deploy your backend with Docker and CI/CD pipelines.",
     docName: "/docs/intro",
-    icon: "🚚",
+    icon: "📦", // Changed to represent deployment and packaging.
     disabled: true,
   },
 ];
@@ -64,11 +64,6 @@ export default function Backend(): JSX.Element {
           <PageLink key={idx} {...props} disabled={props.disabled} />
         ))}
       </PageSection>
-      {/* <PageSection title="SDKs">
-        {sdks.map((props, idx) => (
-              <PageLink key={idx} {...props} disabled={props.disabled}/>
-            ))}
-      </PageSection> */}
     </Layout>
   );
 }

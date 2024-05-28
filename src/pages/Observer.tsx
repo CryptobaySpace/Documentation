@@ -5,19 +5,19 @@ import PageSection from "../layout/PageSection";
 
 const ConceptsLinks: PageLinkProps[] = [
   {
-    title: "What are Observing Squad?",
+    title: "What are Observing Squads?",
     content:
-      "What are observing squad and what are their roles in the network?",
+      "Learn about observing squads and their roles in the network.",
     docName: "/docs/node-runner/observer/observing-squad",
-    icon: "💰",
+    icon: "🧐", // Represents observing and inspecting.
     disabled: true,
   },
   {
     title: "Requirements",
     content:
-      "What do you need to run an observing squad through different methods? (VPS, AWS, Google)",
+      "Understand the requirements to run an observing squad through different methods (VPS, AWS, Google).",
     docName: "/docs/intro",
-    icon: "📊",
+    icon: "📋", // Represents a checklist or requirements.
     disabled: true,
   },
 ];
@@ -26,25 +26,25 @@ const RunNodesLinks: PageLinkProps[] = [
   {
     title: "Install Observing Squad",
     content:
-      "Deploy your observing squad on a VPS end benefit from your private access to the network.",
+      "Deploy your observing squad on a VPS and benefit from private access to the network.",
     docName: "/docs/intro",
-    icon: "🖥",
+    icon: "🖥️", // Represents installing and setting up servers.
     disabled: true,
   },
   {
-    title: "Install Squad with full history",
+    title: "Install Squad with Full History",
     content:
-      "Deploy your observing squad with full history and benefit from the full history of the network.",
+      "Deploy your observing squad with full history and benefit from the complete network history.",
     docName: "/docs/intro",
-    icon: "🔗",
+    icon: "📜", // Represents historical data and records.
     disabled: true,
   },
   {
-    title: "Maintenace & Monitoring",
+    title: "Maintenance & Monitoring",
     content:
-      "Understand how to maintain and monitor your observing squad with Zabbix & Grafana.",
+      "Learn how to maintain and monitor your observing squad using Zabbix & Grafana.",
     docName: "/docs/node-runner/install/maintenance",
-    icon: "🔧",
+    icon: "🔧", // Represents maintenance and tools.
   },
 ];
 

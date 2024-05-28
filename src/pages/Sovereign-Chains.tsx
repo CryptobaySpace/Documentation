@@ -5,16 +5,16 @@ import PageSection from "../layout/PageSection";
 
 const CoreConceptsLinks: PageLinkProps[] = [
   {
-    title: "ESDT Standard",
+    title: "Architecture",
     content:
-      "Discover the power of the ESDT Standard and how to create your own tokens and NFTs native to the chains.",
+      "Discover how Sovereign chains are working and what possibilities they offer to different kind of projects.",
     docName: "/docs/intro",
     icon: "🛠️",
     disabled: true,
   },
   {
-    title: "Ressources",
-    content: " Find ressources to help you create & manage your own assets.",
+    title: "Deployment",
+    content: "Let's deploy your own sovereign chain connected to MultiversX testnet.",
     docName: "/docs/intro",
     icon: "📚",
     disabled: true,
