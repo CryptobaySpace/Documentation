@@ -5,12 +5,11 @@ import PageSection from "../layout/PageSection";
 
 const CoreConceptsLinks: PageLinkProps[] = [
   {
-    title: "Architecture",
+    title: "Concepts",
     content:
       "Discover how Sovereign chains are working and what possibilities they offer to different kind of projects.",
-    docName: "/docs/intro",
+    docName: "/docs/sovereign-chains/intro",
     icon: "🛠️",
-    disabled: true,
   },
   {
     title: "Deployment",
