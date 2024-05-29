@@ -51,7 +51,7 @@ const config: Config = {
     announcementBar: {
       id: "support_us",
       content:
-        "💖 Enjoying our documentation? Show your support by delegating EGLD to our Pool! Thank you for your support! 💖",
+        "💖 Enjoying our documentation? Show your support by delegating EGLD to our Pool! 💖",
 
       backgroundColor: "#00FFFF",
       textColor: "#091E42",

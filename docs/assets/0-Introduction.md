@@ -9,6 +9,8 @@ sidebar_position: 1
 
 The ESDT (eStandard Digital Token) standard is a powerful and flexible framework for creating and managing tokens and NFTs (Non-Fungible Tokens) on the MultiversX blockchain. This document explores the concepts, advantages, and comparisons with token standards on other blockchains.
 
+You can find the official documentation for ESDT [here](https://docs.multiversx.com/tokens/esdt-tokens) but this is a resume of the most important concepts.
+
 ## Concepts
 
 ### What is ESDT?
@@ -38,6 +40,8 @@ Transaction fees on MultiversX are significantly lower than on many other blockc
 ESDT tokens can be seamlessly integrated with various decentralized applications (dApps) on the MultiversX network. The native support for ESDT in the MultiversX wallet and explorer enhances user experience and accessibility. Additionally, ESDT tokens are fully interoperable across the main network and sovereign chains, enabling the reuse of technologies and smart contracts seamlessly.
 
 ## Comparison with Other Chains
+
+Let's compare the ESDT standard on MultiversX with token standards on other popular blockchains:
 
 ### ESDT vs ERC-20 (Ethereum)
 

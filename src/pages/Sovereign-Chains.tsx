@@ -22,12 +22,12 @@ const CoreConceptsLinks: PageLinkProps[] = [
 
 export default function SovereignChains(): JSX.Element {
   return (
-    <Layout title="Assets">
+    <Layout title="Sovereign Chains">
       <PageHeader
-        title="Assets & Utilities"
-        subtitle="Learn how to create & manage assets on MultiversX"
+        title="Sovereign Chains"
+        subtitle="Learn how to deploy your own sovereign chain using MultiversX technology."
       />
-      <PageSection title="Concepts">
+      <PageSection title="Introduction">
         {CoreConceptsLinks.map((props, idx) => (
           <PageLink key={idx} {...props} disabled={props.disabled} />
         ))}

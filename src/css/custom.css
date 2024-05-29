@@ -204,6 +204,17 @@ h2.anchor code {
 .navbar__logo {
   height: 43px; /* Adjust this value to your desired height */
   width: auto;  /* Maintain the aspect ratio */
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+.navbar__logo:hover {
+  transform: scale(1.2);
+}
+
+.navbar__item:hover {
+ transform: scale(1.1);
+ /* align text in the center */
+ padding-bottom: 0.3rem;
 }
 
 /* -------------------- End Navbar ------------------- */
