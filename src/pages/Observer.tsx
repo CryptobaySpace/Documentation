@@ -8,7 +8,7 @@ const ConceptsLinks: PageLinkProps[] = [
     title: "What are Observing Squads?",
     content:
       "Learn about observing squads and their roles in the network.",
-    docName: "/docs/node-runner/observer/observing-squad",
+    docName: "/docs/node-runner/observer/intro",
     icon: "🧐", // Represents observing and inspecting.
   },
   {
