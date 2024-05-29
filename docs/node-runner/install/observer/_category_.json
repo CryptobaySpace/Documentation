@@ -2,6 +2,7 @@
   "label": "Observer Nodes",
   "position": 1,
   "link": {
-    "type": "generated-index"
+    "type": "doc",
+    "id": "node-runner/install/observer/intro"
   }
 }

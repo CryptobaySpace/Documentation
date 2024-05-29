@@ -5,51 +5,50 @@ import PageSection from "../layout/PageSection";
 
 const ConceptsLinks: PageLinkProps[] = [
   {
-    title: "Why Running Validator Nodes?",
+    title: "Why Run Validator Nodes?",
     content:
-      "What are the advantages of running validator nodes on MultiversX?",
+      "Discover the advantages of running validator nodes on MultiversX.",
     docName: "/docs/node-runner/intro",
-    icon: "💰",
+    icon: "⚡", // Represents power and advantage.
     disabled: true,
   },
   {
     title: "Requirements",
-    content: "What do you need to run a node on MultiversX?",
+    content: "Learn what you need to run a node on MultiversX.",
     docName: "/docs/intro",
-    icon: "📊",
+    icon: "📋", // Represents a checklist or requirements.
     disabled: true,
   },
-
   {
     title: "Staking Provider",
     content:
       "Learn how to accept user delegations and earn more rewards on MultiversX.",
     docName: "/docs/intro",
-    icon: "💰",
+    icon: "💰", // Represents earning rewards.
     disabled: true,
   },
 ];
 
 const RunNodesLinks: PageLinkProps[] = [
   {
-    title: "Setup a Validator Node",
+    title: "Set Up a Validator Node",
     content: "Learn how to set up and run a validator node on MultiversX.",
     docName: "/docs/intro",
-    icon: "🖥",
+    icon: "🖥️", // Represents setting up and running servers.
     disabled: true,
   },
   {
     title: "Use Multikey",
     content:
-      "Learn how to use Multikey to manage numerous validator nodes on MultiversX.",
+      "Learn how to use Multikey to manage multiple validator nodes on MultiversX.",
     docName: "/docs/node-runner/install/validator/multikey",
-    icon: "🔗",
+    icon: "🔗", // Represents linking or managing multiple items.
   },
   {
     title: "Maintenance & Monitoring",
     content: "Understand how to maintain and monitor your validator node.",
     docName: "/docs/node-runner/maintenance",
-    icon: "🔧",
+    icon: "🔧", // Represents maintenance and tools.
   },
 ];
 
@@ -65,7 +64,7 @@ export default function Validator(): JSX.Element {
       />
       <PageSection title="Core Concepts">
         {ConceptsLinks.map((props, idx) => (
-          <PageLink key={idx} {...props} />
+          <PageLink key={idx} {...props} disabled={props.disabled} />
         ))}
       </PageSection>
 

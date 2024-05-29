@@ -1,7 +1,5 @@
 ---
-id: observing-squad
-title: Observing Squad
+id: install-squad
+title: Basic Squad
 sidebar_position: 1
 ---
-
-# Introduction

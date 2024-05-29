@@ -20,7 +20,8 @@ I have observed many people struggling to find clear guides to bootstrap their i
 
 ## Dapp
 
-An important aspect of any blockchain project is the interactions from users or off-chain logic.
+You will find ressources for design and build a fullstack dapp connected to the MultiversX network.
+
 
 ### Frontend
 You will find numerous guides on creating your React app with the MultiversX SDK, interacting with the blockchain, and creating a user-friendly interface. Additionally, you will get templates and examples to start your project.
