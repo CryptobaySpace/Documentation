@@ -39,5 +39,5 @@ jobs:
       with:
         context: .
         file: ./Dockerfile
-        tags: ghcr.io/phybyte/mx-guides:latest
+        tags: ghcr.io/cryptobayspace/mx-guides:latest
         push: true
