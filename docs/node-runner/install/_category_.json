@@ -1,8 +1,0 @@
-{
-  "label": "Install Nodes",
-  "position": 3,
-  "link": {
-    "type": "doc",
-    "id": "node-runner/install/intro"
-  }
-}
