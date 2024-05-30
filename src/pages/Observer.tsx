@@ -8,9 +8,8 @@ const ConceptsLinks: PageLinkProps[] = [
     title: "What are Observing Squads?",
     content:
       "Learn about observing squads and their roles in the network.",
-    docName: "/docs/node-runner/observer/observing-squad",
+    docName: "/docs/node-runner/observer/intro",
     icon: "🧐", // Represents observing and inspecting.
-    disabled: true,
   },
   {
     title: "Requirements",
@@ -43,7 +42,7 @@ const RunNodesLinks: PageLinkProps[] = [
     title: "Maintenance & Monitoring",
     content:
       "Learn how to maintain and monitor your observing squad using Zabbix & Grafana.",
-    docName: "/docs/node-runner/install/maintenance",
+    docName: "/docs/node-runner/maintenance",
     icon: "🔧", // Represents maintenance and tools.
   },
 ];

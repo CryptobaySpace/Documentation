@@ -52,7 +52,7 @@ export default function Backend(): JSX.Element {
     <Layout title="Backend" description="Learn how to create backend services.">
       <PageHeader
         title="Backend Journey"
-        subtitle="Learn how to create backend services for your Dapp."
+        subtitle="Learn how to create backend services for your project."
       />
       <PageSection title="Core Concepts">
         {CoreConceptsLinks.map((props, idx) => (
