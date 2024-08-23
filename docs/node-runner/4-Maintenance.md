@@ -13,10 +13,10 @@ Simple tricks in monitoring and basic linux commands are enough for supervise an
 
 ### Update & Upgrade Host
 
-It's crucial to keep your machine up to date and secure. Run the following commands periodically to ensure your packages are aligned with the latest security updates.
+It's crucial to keep your machine up to date and secure.
 
 ```bash
-# -- Stepped Update Sequence
+# These commands should also run periodically to maintain your system aligned with the latest security updates.
 
 # Fetch the latest package information
 sudo apt -y update
@@ -28,11 +28,14 @@ sudo apt -y upgrade
 
 ### Upgrade Nodes
 
-As the network evolve, new features are added. It is required from the node runners to upgrade their scripts and even more important for validators to continue to be part of the consensus and earn rewards (Passed a certain delay the validator nodes can event be jail).
+As the network evolve, it is required from the node runners to upgrade their scripts and even more important for validators to continue to be part of the consensus and earn rewards (**Passed a certain delay the validator nodes can event be jail**).
 
 At the moment, the favorite way of transmitting the news about an upgrade of the nodes is telegram, through the [Validator Group](https://t.me/s/MultiversXValidators).
 
-Before to do any action on your nodes, don't forget to login as your Noderunner user:
+TODO: WARNING: Always wait for an official announcment before to upgrade your nodes
+Before to do any action on your nodes, don't forget to login as your 
+
+Connect
 
 ```bash
 # Login as your NodeRunner user
@@ -52,11 +55,9 @@ cd ~/mx-chain-scripts
 
 ```
 
-You can the check the synchronizing status of your different nodes with:
+You can the check the synchronizing status of your different nodes with the [termui script](/docs/node-runner/monitoring#termui-from-the-host).
 
 ```bash
-
-TODO:
 ```
 
  ## Operations

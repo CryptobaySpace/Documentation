@@ -1,6 +1,6 @@
 ---
-id: esdt-tokens
-title: ESDT Tokens
+id: intro
+title: Tokens
 sidebar_position: 1
 ---
 

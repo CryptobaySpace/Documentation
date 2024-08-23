@@ -3,11 +3,11 @@ id: nft
 title: NFT
 sidebar_position: 1
 ---
-# ESDT NFTs on MultiversX
+# NFTs on MultiversX
 
 ESDT NFTs (Non-Fungible Tokens) are unique digital assets that represent ownership or proof of authenticity for a specific item or piece of content. They are widely used in digital art, collectibles, gaming, and more within the MultiversX ecosystem.
 
-## Key Features of ESDT NFTs
+## Key Features of NFTs
 
 - **Uniqueness**: Each NFT is unique and cannot be replicated, ensuring its distinct value.
 - **Metadata**: NFTs can contain metadata that provides additional information about the asset they represent.
@@ -15,7 +15,7 @@ ESDT NFTs (Non-Fungible Tokens) are unique digital assets that represent ownersh
 
 ## Configuration
 
-### Creating an ESDT NFT
+### Creating an NFT
 
 To create an NFT, you need to define several parameters:
 
@@ -49,5 +49,6 @@ The metadata of an NFT can include various details such as:
 - **Metadata Storage**: Use decentralized storage solutions like IPFS for storing metadata.
 - **Authenticity**: Ensure the authenticity of the NFT by verifying the creator and metadata.
 - **User Experience**: Provide clear and detailed metadata to enhance the user experience.
+  
 ## Conclusion
 ESDT NFTs enable the creation of unique digital assets on the MultiversX blockchain. With their distinct features and customizable properties, NFTs are ideal for representing ownership and authenticity in various applications. Explore the MultiversX Documentation for more details on creating and managing ESDT NFTs.

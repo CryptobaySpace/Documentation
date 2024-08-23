@@ -8,7 +8,7 @@ const CoreConceptsLinks: PageLinkProps[] = [
     title: "ESDT Standard",
     content:
       "Discover the power of the ESDT Standard and how to create your own tokens and NFTs native to the chains.",
-    docName: "/docs/assets/intro",
+    docName: "/docs/assets/tokens/intro",
     icon: "🔧", // Represents the tools and standards involved in ESDT.
   },
   {

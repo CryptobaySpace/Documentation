@@ -27,9 +27,9 @@ You can use the public explorer from MultiversX to monitor the status of your no
 
 If you are a staking provider, you will have a contract address or an identity. It will be possible to see all your nodes directly through it and check if they have problems.
 
-## Script from the Host
+## Termui from the Host
 
-On the machine where you installed your nodes, a script is now available in the elrond-utils folder.
+On the machine where you installed your nodes, using the noderunner user, a script is now available in the elrond-utils folder.
 
 ```bash
 cd ~/elrond-utils

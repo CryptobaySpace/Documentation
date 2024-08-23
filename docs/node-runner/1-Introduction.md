@@ -6,7 +6,15 @@ sidebar_position: 1
 
 # Running Nodes on MultiversX
 
-This section will explain how to run nodes on the MultiversX network and benefit from their advantages. Understanding the different types of nodes and their roles is essential for anyone looking to participate in the network.
+This section will explain how to run nodes on the MultiversX network and benefit from their advantages. Understanding the different types of nodes and their roles is essential for anyone looking to participate in the network or explore the data on it.
+
+## Requirements
+
+Depending on your type of nodes and their configuration, the minimum hardware requirements could change . But except for testing purposes 
+
+In any case, their is an initial setup for your servers that would require similar steps to ensure an optimal result.
+
+Please check the page about (Setup NodeRunner Machine)[/docs/node-runner/setup-machine]
 
 ## Types of Nodes
 

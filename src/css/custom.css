@@ -200,6 +200,10 @@ h2.anchor code {
   border-bottom-color: rgba(0, 255, 255, 0.6);
   box-shadow: 0 0 5px 2px rgba(0, 255, 255, 0.6);
   height: 58px;
+  /* position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; */
 }
 .navbar__logo {
   height: 43px; /* Adjust this value to your desired height */
@@ -222,6 +226,13 @@ h2.anchor code {
 
 
 /* -------------------- Start Footer ------------------- */
+/* .footer {
+  background-color: #171923;
+  color: #fff;
+  height: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+} */
 
 .footer-favicon {
   width: 1em;

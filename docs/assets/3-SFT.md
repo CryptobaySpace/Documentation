@@ -5,11 +5,11 @@ sidebar_position: 1
 ---
 
 
-# ESDT SFTs on MultiversX
+# SFTs on MultiversX
 
 ESDT SFTs (Semi-Fungible Tokens) are a hybrid token standard that combines features of both fungible and non-fungible tokens. They are useful for applications that require a mix of unique and interchangeable assets, such as gaming items and event tickets.
 
-## Key Features of ESDT SFTs
+## Key Features of SFTs
 
 - **Semi-Fungibility**: SFTs can represent multiple instances of a unique item, providing a balance between fungibility and uniqueness.
 - **Batch Transfers**: SFTs can be transferred in batches, making them efficient for use cases involving multiple items.
@@ -17,7 +17,7 @@ ESDT SFTs (Semi-Fungible Tokens) are a hybrid token standard that combines featu
 
 ## Configuration
 
-### Creating an ESDT SFT
+### Creating an SFT
 
 To create an SFT, you need to define several parameters:
 

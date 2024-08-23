@@ -1,6 +1,6 @@
 {
   "label": "Observer Nodes",
-  "position": 1,
+  "position": 2,
   "link": {
     "type": "doc",
     "id": "node-runner/observer/intro"
