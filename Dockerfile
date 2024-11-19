@@ -1,26 +1,35 @@
-# Use the official Node.js image as a parent image
-FROM node:18
+# Build Stage
+FROM node:18 as build
 
-# Set the working directory in the container
+# Set the working directory in the build container
 WORKDIR /usr/src/app
 
-# Copy the package.json and package-lock.json (if available) to the container
-COPY package*.json ./
+# Copy only package.json and yarn.lock to leverage Docker's caching
+COPY package.json yarn.lock ./
 
-# Install project dependencies
-RUN npm install
+# Install dependencies using Yarn
+RUN yarn install --production
 
-# Copy the rest of your app's source code from your host to your image filesystem.
+# Copy the rest of the application source code
 COPY . .
 
 # Build the Docusaurus site
-RUN npm run build
+RUN yarn build
 
-# Install a simple server to serve your site
-RUN npm install -g serve
+# Runtime Stage
+FROM node:18-slim
 
-# Inform Docker that the container listens on the specified port at runtime.
+# Install a lightweight static file server
+RUN yarn global add serve
+
+# Set the working directory in the runtime container
+WORKDIR /usr/src/app
+
+# Copy only the built files from the build stage
+COPY --from=build /usr/src/app/build ./build
+
+# Expose port 3000
 EXPOSE 3000
 
-# Run the server command
+# Start the static file server
 CMD ["serve", "-s", "build", "-l", "3000"]
